@@ -1,4 +1,4 @@
-/*  ©2020 Ozvid Technologies Pvt. Ltd. All Rights Reserved.Hosted by jiWebHosting.com */
+
 "use strict";
 
 /*
@@ -79,7 +79,7 @@ _service.memberNumberSearch = async function memberNumberSearch(objToSave) {
 
   const user = await (await users.findOne(objToSave))
     .populate("_id")
-    .exec((err, _id) => {});
+    .exec((err, _id) => { });
   let basicData = await users.findOne(objToSave);
 
   let lifestyleData = await lifestyle.findOne({ userId: basicData._id });

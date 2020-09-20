@@ -1,4 +1,4 @@
-/*  ©2020 Ozvid Technologies Pvt. Ltd. All Rights Reserved.Hosted by jiWebHosting.com */
+
 var winston = require('winston');
 const { createLogger, format, transports } = require('winston');
 const { combine, timestamp, label, prettyPrint, json } = format;
